@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+</head>
+<body>
+    <H1>Chapter 35-38</H1>
+    <script>
+        function calculator(num1, num2, operator) {
+  var result;
+
+  switch (operator) {
+    case "+":
+      result = num1 + num2;
+      break;
+    case "-":
+      result = num1 - num2;
+      break;
+    case "*":
+      result = num1 * num2;
+      break;
+    case "/":
+      result = num1 / num2;
+      break;
+    default:
+      return "Invalid operator!";
+  }
+
+  return "The result is: " + result;
+}
+
+var num1 = parseFloat(prompt("Enter the first number:"));
+var num2 = parseFloat(prompt("Enter the second number:"));
+var operator = prompt("Enter the operator (+, -, *, /):");
+
+var result = calculator(num1, num2, operator);
+document.write(result);
+
+    </script>
+</body>
+</html>
