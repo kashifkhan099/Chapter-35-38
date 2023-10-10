@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 8</title>
+</head>
+<body>
+    <H1>Chapter 35-38</H1>
+    <script>
+        function computeHypotenuse(base, perpendicular) {
+            function square(num){
+            return num * num;
+        }
+
+        var baseSquared = square(base);
+        var perpendicularSquared = square(perpendicular);
+        var hypotenuseSquared = baseSquared + perpendicularSquared;
+        var hypotenuse = Math.sqrt(hypotenuseSquared);
+
+        return hypotenuse;
+    }
+    var baseLenght = parseFloat(prompt("Enter the length of the base:"));
+    var perpendicularLength = parseFloat(prompt("Enter the length of the perpendicular:"));
+    var hypotenuseLength = computeHypotenuse(baseLenght, perpendicularLength);
+
+    console.log("The length of the hypotenuse is: " + hypotenuseLength);
+
+    </script> 
+</body>
+</html>
