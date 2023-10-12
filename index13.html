@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 13</title>
+</head>
+<body>
+    <H1>Chapter 35-38</H1>
+    <script>
+        function countOccurrences(str, letter) {
+            let count = 0;
+            for (let i = 0; i < str.length; i++){
+                if (str[i] ===letter) {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        let word = "JSResourceS.com";
+        let letter = "0";
+        let occurrences = countOccurrences(word, letter);
+        console.log(occurrences);
+
+    </script> 
+</body>
+</html>

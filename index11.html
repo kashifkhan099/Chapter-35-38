@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 11</title>
+</head>
+<body>
+    <H1>Chapter 35-38</H1>
+    <script>
+        function capitalizeWords(str) {
+            let words = str.split(" ");
+            for (let i = 0; i< words.length; i++) {
+                words[i] = words[i][0].toUpperCase() + words[i].substring(1);
+            }
+
+            // let capitalizedWords = words.map(word =>{
+            //     let firstLetter = word.charAt(0).toUpperCase();
+            //     let restOfWord = words.slice(1);
+            //     return firstLetter + restOfWord;
+            // });
+            // return capitalizedWords.join(" ");
+            return words.join(" ");
+        }
+        let sentence = "the quick brown fox";
+        let capitalizedSentence = capitalizeWords(sentence);
+        console.log(capitalizedSentence);
+        // let inputString = "the quick brown fox";
+        // let capitalizedString = capitalizeWords(inputString);
+        // console.log(capitalizedString);
+
+    </script> 
+</body>
+</html>
